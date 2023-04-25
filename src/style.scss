@@ -1,0 +1,80 @@
+/* baloo-tamma-2-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo Tamma 2';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/baloo-tamma-2-v15-latin/baloo-tamma-2-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/baloo-tamma-2-v15-latin/baloo-tamma-2-v15-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* ntr-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'NTR';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/ntr-v15-latin/ntr-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('./assets/fonts/ntr-v15-latin/ntr-v15-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+:root {
+    font-size: 62.5%;
+    body {
+        margin:0;
+        width: 100vw;
+        height: 100vh;
+        font-size: 2.5rem;
+        background-image: url("/src/assets/images/background.jpg");
+        background-position: center center;
+        background-color: #464646;
+        background-size: cover;
+        color: white;
+        font-family: 'NTR';
+        header {
+            margin:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:2rem;
+            font-family: 'Baloo Tamma 2';
+            img {
+                height: 6rem;
+                width: auto;
+            }
+            h1 {
+                margin:0;
+                padding-top:2rem;
+            }
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            .top-content {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+            }
+            .weather {
+                background-color: #4b4c5590;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                text-align: center;
+                input {
+                    appearance: none;
+                    border: none;
+                    border-radius: 25px;
+                    padding : 0.5rem 1.5rem;
+                    height: 3rem;
+                }
+                input:focus {
+                    outline:none;
+                }
+                
+            }
+        }
+    }
+
+    
+}
